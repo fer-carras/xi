@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi</title>
+    <link rel="stylesheet" href="css/xi.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.jpg" width="150px">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Mi perfil</a></li>
+                <li><a href="amigos.html">Mis amigos</a></li>
+                <li><a href="fotos.html">Mis fotos</a></li>
+                <li><a href="agregar.html">Agregar amigos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="perfil">
+        <img src="img/fotoperfil.jpg" width="168px">
+        <h1>It's me </h1>
+        <h3><form action="php/SubirFoto.php" method="post" enctype="multipart/form-data">
+            Añadir Imagen: <input type="file" name="archivo" id="archivo" accept=".jpeg,.png,.jpg" required>
+            <input type="submit" name="subir" value="Subir">
+        </form></h3>
+        <p class="parrafo">Yo puro "Hola mundo" que es eso de php (?</p>
+    </section>
+    <section id="recuadros">
+        <h2>Mis amigos</h2>
+        
+        <section class="recuadro">
+            <img src="img/amix1.jpg" width="180px" >
+            <h2>It's Crowly</h2>
+            <p class="parrafo"> Es del diabolo </p>
+            <a href="" class="boton">Ver perfil</a> <br>
+        </section>
+        
+        <section class="recuadro">
+            <img src="img/amix2.jpg" width="180px" >
+            <h2>It's Aziraphale</h2>
+            <p class="parrafo"> Es de diosito </p>
+            <a href="" class="boton">Ver perfil</a> <br>
+        </section>
+        
+        <section class="recuadro">
+            <img src="img/amix3.png" width="180px" >
+            <h2>It's Collete</h2>
+            <p class="parrafo"> Chef mamalon </p>
+            <a href="" class="boton">Ver perfil</a> <br> <br>
+        </section>
+        
+    </section>
+    <section id="recuadros">
+        <h2>Mis fotos</h2>
+        <section class="recuadro">
+        <img src="img/foto1.jpg"  width="200">
+        </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto3.jpeg"  width="200">
+       </section>
+    </section>
+    <footer>
+        <p>Copyright &copy; Xipatlani </p>
+    </footer>
+</body>
+</html>

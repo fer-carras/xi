@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi</title>
+    <link rel="stylesheet" href="css/xi.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/logo.jpg" width="150px">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Mi perfil</a></li>
+                <li><a href="amigos.html">Mis amigos</a></li>
+                <li><a href="fotos.html">Mis fotos</a></li>
+                <li><a href="agregar.html">Agregar amigos</a></li>
+                <li><a href="php/CerrarSesion.php">CerrarSesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="recuadros">
+        <h2>Fotos</h2>
+        <h3><form action="php/SubirFoto.php" method="post" enctype="multipart/form-data">
+            Añadir Imagen: <input type="file" name="archivo" id="archivo" accept=".jpeg,.png,.jpg" required>
+            <input type="submit" name="subir" value="Subir">
+        </form></h3>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+        <section class="recuadro">
+        <img src="img/foto2.jpg"  width="200">
+       </section>
+    </section>
+    <footer>
+        <p>Copyright &copy; Xipatlani </p>
+    </footer>
+</body>
+</html>
