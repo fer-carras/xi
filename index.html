@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi</title>
+    <link rel="stylesheet" href="css/xi.css">
+</head>
+<body>
+    <header>
+    <div id="logo">
+        <img src="img/logo.jpg" width="150px">
+    </div>
+    </header>
+    <section id="formulario">
+        <form class="form" name="nuevo usuario" method="post" action="php/ConexionCrearUsuario.php">
+            <h2>Registro</h2>
+            Nickname: <br><input type="text" name="nickname" pattern="[a-zA-Z0-9]+" placeholder="Ingresa nickname" required autofocus> <br>
+            Contraseña: <br><input type="password" name="password" maxlength="20" autocomplete="new-password" placeholder="Ingrese su contraseña" required> <br>
+            Nombre: <br> <input type="text" name="nombre" placeholder="Your name please" required><br>
+            Apellidos: <br><input type="text" name="apellidos" placeholder="Your last name cofa" required> <br>
+            E-mail: <br><input type="email" name="email" placeholder="Tu correo aqui" required> <br>
+            Edad: <br><input type="number" name="edad" min="15" placeholder="Su edad jovenazo" required> <br>
+            Descripcion: <br><textarea name="descripcion" placeholder="Spell the tea uwu" required ></textarea> <br><hr>
+            <br><input type="submit" name="enviar" value="Registrar" class="boton">
+            <input type="reset" name="borrar" value="Borrar =(" class="boton"> 
+        </form>
+    </section>
+
+    <section id="formulario2">
+        <form action="php/IniciarSesion.php" method="post" name="contacto" class="form">
+            <h2>Iniciar sesión</h2>
+            Nickname: <br><input type="text" name="nickname" placeholder="Ingresa tu nickname" required autofocus> <br>
+            Contraseña: <br><input type="password" name="contraseña" autocomplete="off" placeholder="Ingrese tu contraseña" required> <br> <hr>
+            <br><input type="submit" name="enviar" value="Iniciar sesion" class="boton"> 
+        </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; Xipatlani </p>
+    </footer>
+</body>
+</html>
